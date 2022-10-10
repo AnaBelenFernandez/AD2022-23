@@ -142,9 +142,13 @@ contenido actual del Document usado en el programa.*/
                 String altura = teclado.nextLine();
                 Element elAltura = (Element) element.getElementsByTagName("altura").item(0);
                 Text texto = (Text) elAltura.getChildNodes().item(0);
+                //también se puede hacer Text textAltura=(Text)nodoAltura.getFirstChild(); si te fijas es lo mismo
                 elAltura.removeChild(texto);
-                Text nuevoTexto = doc.createTextNode(altura);
+                Text nuevoTexto = doc.createTextNode(String.format(Locale.US,"%4.2f",altura));
                 elAltura.appendChild(nuevoTexto);
+                //también se puede hacer con el setTextContent que sería
+                //(Element)nodoAltura).setTextContent(String.format(Locale.US,"%4.2f",altura));
+                System.out.println("Modificada la altura del futbolista");
             }
         }
         if(!encontrado){
@@ -166,18 +170,21 @@ contenido actual del Document usado en el programa.*/
                 System.out.println(listaFutbolistas.item(i).toString());
                 System.out.println("Introduce nuevo código de equipo");
                 String codEquipo = teclado.nextLine();
+                codEquipo=codEquipo.substring(0,3).toUpperCase();
+                //asignando un valor a un atributo existente, se modifica el valor del atributo
+                element.setAttribute("equipo",codEquipo);
+                /* Yo lo había hecho así, pero es mucho más complicado, aunque también funciona
                 Element codigo = (Element) element.getElementsByTagName("codEq").item(0);
                 Text texto = (Text) codigo.getChildNodes().item(0);
                 codigo.removeChild(texto);
                 Text nuevoTexto = doc.createTextNode(codEquipo);
-                codigo.appendChild(nuevoTexto);
+                codigo.appendChild(nuevoTexto);*/
+                System.out.println("Modificado el equipo del futbolista");
             }}
             if(!encontrado){
                 System.out.println("futbolista no encontrado");
             }
-
         }
-
     private static void consultarPorNumero(int num, Document doc) {
         Element raiz = doc.getDocumentElement();
         NodeList listaFutbolistas = raiz.getElementsByTagName("futbolista");
