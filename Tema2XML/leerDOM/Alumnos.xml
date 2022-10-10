@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Alumnos aula="INFO3" grupo="DAM2">
+<Alumno>
+	<Nombre>Ana Alonso</Nombre><Edad>20</Edad>
+	<Modulos>
+		<Modulo><NomModulo>Acceso a Datos</NomModulo>
+			<Calificacion>6</Calificacion></Modulo>
+		<Modulo><NomModulo>PSP</NomModulo>
+			<Calificacion>7</Calificacion></Modulo>
+	</Modulos>
+</Alumno>
+<Alumno>
+	<Nombre>Beatriz Blanco</Nombre><Edad>21</Edad>
+	<Modulos>
+		<Modulo><NomModulo>Acceso a Datos</NomModulo>
+			<Calificacion>7.5</Calificacion></Modulo>
+	</Modulos>
+</Alumno>
+</Alumnos> 

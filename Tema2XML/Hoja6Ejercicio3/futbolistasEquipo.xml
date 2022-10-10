@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<futbolistas codEq="RMA" localidad="Madrid">
+    <futbolista>
+        <alias>Tony Kroos</alias>
+        <puesto>centrocampista</puesto>
+        <altura>1.84</altura>
+    </futbolista>
+    <futbolista>
+        <alias>Tiboud Courtois</alias>
+        <puesto>portero</puesto>
+        <altura>1.9</altura>
+    </futbolista>
+</futbolistas>

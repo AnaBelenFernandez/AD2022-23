@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<alumnos aula="IF03" grupo="DAM2">
+    <alumno>
+        <nombre>Ana Alonso</nombre>
+        <edad>20</edad>
+    </alumno>
+</alumnos>

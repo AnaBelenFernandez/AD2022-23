@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<futbolistas codEq="BAR" localidad="Barcelona">
+    <futbolista>
+        <alias>Gerard Pique</alias>
+        <puesto>defensa</puesto>
+        <altura>1.92</altura>
+    </futbolista>
+    <futbolista>
+        <alias>Ansu Fati</alias>
+        <puesto>sin_especificar</puesto>
+        <altura>1.78</altura>
+    </futbolista>
+    <futbolista>
+        <alias>De Jong</alias>
+        <puesto>centrocampista</puesto>
+        <altura>1.8</altura>
+    </futbolista>
+</futbolistas>
